@@ -1,24 +1,23 @@
+// App.js
 import './App.css';
 import About from './components/about';
 import Amenities from './components/Amenities';
+import Gallery from './components/Gallery';
+import Packages from './components/Packages';
 import Booking from './components/Booking';
 import Footer from './components/footer';
-import Gallery from './components/Gallery';
 import Header from './components/header';
-import Packages from './components/Packages';
 
 function App() {
   return (
     <>
       <Header />
-      <About />
-      <Amenities />
-      <Gallery />
-      <Packages />
-      <Booking />
-      <Footer/>
-
-
+      <div id="about-us"><About /></div>
+      <div id="amenities"><Amenities /></div>
+      <div id="gallery"><Gallery /></div>
+      <div id="packages"><Packages /></div>
+      <div id="booking"><Booking /></div>
+      <Footer />
     </>
   );
 }
