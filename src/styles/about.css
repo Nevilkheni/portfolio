@@ -1,0 +1,131 @@
+.container {
+    margin: 0 30px;
+  }
+  
+  .aboutheader {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+  
+  .aboutheader h1 {
+    font-size: 50px;
+    font-weight: 400;
+    margin: 100px 0 0 0;
+    color: #000000;
+  }
+  
+  .aboutheader p {
+    font-size: 20px;
+    font-weight: 200;
+    margin: 0 0 50px 0;
+    color: #000000;
+  }
+  
+  .about-container {
+    display: flex;
+    gap: 50px;
+    margin: 0 0 100px 0;
+  }
+  
+  .imgabout {
+    height: 400px;
+    width: 600px;
+    border-radius: 10px;
+  }
+  
+  .about-container h2 {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+    color: #000000;
+  }
+  
+  .about-container h3 {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.7rem;
+    margin: 0 0 20px 0;
+    color: #000000;
+  }
+  
+  .about-container h4 {
+    font-size: 17px;
+    font-weight: 300;
+    margin: 0 0 20px 0;
+    line-height: 1.8rem;
+    color: #000000;
+  }
+  
+  .about-content {
+    width: 600px;
+  }
+  
+  /* ----------------- Responsive Design ----------------- */
+  
+  @media (max-width: 1024px) {
+    .about-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .imgabout,
+    .about-content {
+      width: 90%;
+    }
+  
+    .imgabout {
+      height: auto;
+      max-width: 100%;
+    }
+  
+    .about-content {
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .aboutheader h1 {
+      font-size: 36px;
+    }
+  
+    .aboutheader p {
+      font-size: 18px;
+    }
+  
+    .about-container h2 {
+      font-size: 26px;
+    }
+  
+    .about-container h3,
+    .about-container h4 {
+      font-size: 16px;
+      line-height: 1.6rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .aboutheader h1 {
+      font-size: 28px;
+    }
+  
+    .aboutheader p {
+      font-size: 16px;
+    }
+  
+    .about-container h2 {
+      font-size: 22px;
+    }
+  
+    .about-container h3,
+    .about-container h4 {
+      font-size: 15px;
+      line-height: 1.5rem;
+    }
+  
+    .container {
+      margin: 0 15px;
+    }
+  }
+  

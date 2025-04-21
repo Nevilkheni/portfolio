@@ -1,0 +1,94 @@
+.packages{
+    background-color: #f6f6f9;
+    margin: auto;
+    
+}
+
+.packages-title h1{
+    font-size: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #0f1f2d;
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+    padding-top: 5rem;
+}
+
+.packages-title p{
+    font-size: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #0f1f2d;
+    font-weight: 300;
+    text-align: center;
+    
+    
+}
+
+
+
+
+
+
+.room-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+   
+    margin: auto;
+    max-width: 700px;
+    padding: 2rem;
+  }
+  
+  .room-card {
+    max-width: 300px;
+    max-height: 150px;
+    display: flex;
+    
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .room-card img {
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .room-price {
+    position: absolute;
+    background-color: #0f1f2d;
+    color: white;
+    padding: 0.5rem 1rem;
+    bottom: 0;
+    left: 0;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .room-info {
+    padding: 1.5rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .room-info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #2c3e50;
+  }
+  
+  .room-info p {
+    margin: 0.3rem 0.1rem;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .room-icons {
+    font-size: 1rem;
+    display: flex;
+    gap: 10px;
+  }
+  

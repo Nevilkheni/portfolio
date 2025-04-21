@@ -1,0 +1,241 @@
+/* === Base Styles === */
+
+.amenities {
+  background-color: #f6f6f9;
+  padding: 100px 30px;
+}
+
+.amenities-header h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 400;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 70px 0 0 0;
+  color: #333;
+}
+
+.amenities-header p {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 20px 0 20px 0;
+  color: #666;
+}
+
+.amenities-content {
+  display: flex;
+  flex-direction: row;
+  padding: 30px 0;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.imgamenities {
+  height: 70px;
+  width: 70px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+
+.item {
+  height: 250px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.8rem;
+  filter: brightness(50%);
+  flex-wrap: wrap;
+}
+
+.linens     { background-image: url('/public/hotel-linens.jpg'); }
+.toiletries { background-image: url('/public/toileteries-free-img.jpg'); }
+.breakfast  { background-image: url('/public/breakfast-free-img.jpg'); }
+.pool       { background-image: url('/public/swimming-pool-free-img.jpg'); }
+.spa        { background-image: url('/public/hotel-massage.jpg'); }
+.dining     { background-image: url('/public/hotel-meal.jpg'); }
+.bar        { background-image: url('/public/bar-free-img.jpg'); }
+.banquet    { background-image: url('/public/banquet-free-img.jpg'); }
+
+.amenities-img {
+  background-image: url('/public/bg.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.amenities-img::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.overlay-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  padding: 0 50px;
+  gap: 50px;
+  text-align: left;
+}
+
+.overlay-content h1 {
+  font-size: 3rem;
+  margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+.overlay-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.overlay-text {
+  width: auto;
+}
+
+.hero-btn {
+  background-color: #ffc107;
+  color: white;
+  padding: 0.8rem 5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 50px;
+  width: 350px;
+  text-align: center;
+  height: 30px;
+  transition: background-color 0.3s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-btn:hover {
+  background-color: #e0a800;
+  color: #000;
+}
+
+/* === Responsive Enhancements === */
+
+/* For medium to large screen devices */
+@media (max-width: 1024px) {
+  .overlay-content {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .overlay-text {
+    width: 100%;
+  }
+
+  .hero-btn {
+    width: 100%;
+    padding: 1rem 2rem;
+    margin-top: 20px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+  .item {
+    font-size: 1.6rem;
+    height: 220px;
+  }
+}
+
+/* For tablets and large phone screens */
+@media (max-width: 768px) {
+  .amenities-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .amenities-header p {
+    font-size: 1rem;
+  }
+
+  .imgamenities {
+    height: 60px;
+    width: 60px;
+  }
+
+  .item {
+    font-size: 1.4rem;
+    height: 200px;
+  }
+
+  .overlay-content h1 {
+    font-size: 2rem;
+  }
+
+  .overlay-content p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .amenities {
+    padding: 50px 15px;
+  }
+
+  .imgamenities {
+    height: 50px;
+    width: 50px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .overlay-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .overlay-content p {
+    font-size: 0.9rem;
+  }
+
+  .hero-btn {
+    font-size: 0.95rem;
+    padding: 0.7rem 1.5rem;
+    
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .hero-btn {
+    width: 200px;
+    padding: 0.8rem 2rem;
+    margin-top: 20px;
+  }
+}
